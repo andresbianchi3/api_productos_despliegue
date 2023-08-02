@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+require("dotenv").config();// es la salvacion para que ande
 
 mongoose.connect(process.env.MONGO_URL, {
   useUnifiedTopology: true,
